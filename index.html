@@ -1,1 +1,84 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="nav.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:light|Nanum+Myeongjo|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jvs.scripts.js"></script>
+    <script type="text/javascript" src="myjs.scripts.js"></script>
+    <title>Princeton Chamber Music Ensemble</title>
+</head>
+
+<body id="home-index">
+    <header id="site-header">
+
+    <div class="topnav" id="myTopnav">
+        <a id="myHome" href="#home" title="Return to home page"><img src="logo.png" alt="Princeton Chamber Music Society"></a>
+        
+        <!-- tabs in backward order bc css float right -->
+        <h1>
+        <a href="#about">About</a>
+        <a href="#media">Media</a>
+        <a href="#events">Events</a>
+        <a href="#audition">Audition</a>
+        <a href="#contact">Contact</a>
+        </h1>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+    <div id="intro">
+        <a href="#container" id="slide-down-to-content" class="arrow" title ="Continue to Upcoming Events">
+            <img src="noun_arrow.png" alt="Continue to Upcoming Events">
+        </a>
+    </div>
+
+    <div id="container">
+        <main>
+            <section id="upcoming-events">
+                <header>
+                    <h1><a href="/upcoming-events/">Upcoming Events</a></h1>
+                </header>
+
+                <table class="upcoming-events">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Name</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="clickable-row" data-href="https://www.facebook.com/austin.le.904">
+                            <td class="dates"><time datetime="2018-08-17">2017 DEC 1</time></td><td>Rebirth</td>
+                        </tr>
+                        <tr class="clickable-row" data-href="https://www.facebook.com/austin.le.904">
+                            <td class="dates"><time datetime="2018-08-21">2017 OCT 7</time></td>
+                            <td>5th Anniversary Princeton Piano Extravaganza</td>
+                        </tr>
+                        <tr class="clickable-row" data-href="https://www.facebook.com/austin.le.904">
+                            <td class="dates"><time datetime="2018-08-25">2017 MAY 5</time></td>
+                            <td>Reunions Show</td>
+                        </tr>
+                        <tr class="clickable-row" data-href="https://www.facebook.com/austin.le.904">
+                            <td class="dates"><time datetime="2018-09-15">2017 MAY 5</time></td>
+                            <td>Some other shit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <div id="alternative-background"></div>
+</body>
+
+</html>
+
+
