@@ -1,0 +1,132 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myTopnav {
+    /*line-height: 2.6rem;*/
+    height: 14rem;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#homeLogo {
+    margin-top: 4.6rem;
+    display: flex;
+    /*margin-left: 1.5rem;*/
+}
+
+#homeLogo a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#homeLogo a .orange {
+    display: inline-flex;
+    color: #FF8C00;
+}
+
+#tabs {
+    /*border: 1px solid pink;*/
+    display: flex;
+    align-items: center;
+}
+
+#tabs a {
+    /*border: 1px solid green;*/
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 1.4rem 0rem;
+    margin: 0rem 0.8rem;
+}
+
+#tabs a:hover {
+    color: #FF8C00;
+}
+
+/* dropdown button */
+#tabs .dropbtn {
+    /*padding-right: 0;
+    padding-left: 0;*/
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    /*height: 1.5rem;*/
+    border: none;
+    padding: 1.4rem 0rem;
+    margin: 0rem 0.8rem;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#tabs .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#tabs .dropdown-content {
+    display: none;
+    /*padding-left: 0.8rem;*/
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 14rem;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+#tabs .dropdown-content a {
+    padding: 0.7rem 0.8rem;
+    margin: 0.01rem 0rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+#tabs .dropdown-content a:hover {
+    background: rgb(204, 204, 204);
+    background: rgba(204, 204, 204, 0.5);
+}
+
+/* Show the dropdown menu on hover */
+#tabs .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#tabs .dropdown:hover .dropbtn {
+    color: #FF8C00;
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Kammermusik18_0127.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

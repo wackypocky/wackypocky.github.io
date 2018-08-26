@@ -1,0 +1,295 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1
+    {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    /*text-transform: uppercase;*/
+    }
+
+a
+    {
+    /*color: #3d3f54;*/
+    /* color of links general is white*/
+    color: #ffffff;
+    text-decoration: none;
+    }
+
+a:hover,
+a:active
+    {
+    text-decoration: underline;
+    }
+
+time
+    {
+    /*color of dates general is black*/ 
+    color: #000000;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    }
+
+table {   
+    color: #ffffff;
+    border-collapse: collapse;
+}
+
+td {
+    border: 0px solid transparent;
+    background-clip: padding-box;
+    /*border-top-width: 1px;*/
+    border-bottom-width: 14px;
+}
+
+tr > td + td {
+  border-left-width: 27px;
+}
+
+/*tr + tr > td {
+  border-top-width: 10px;
+}*/
+
+table.upcoming-events {
+    /*table-layout: fixed;*/
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* ------------------------------ TOPNAV ------------------------------ */
+
+#myTopnav {
+    /*border: 1px solid black;*/
+    width:100%;
+    line-height: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#homeLogo {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 0.9rem;
+    margin-left: 2.2rem;
+}
+
+#homeLogo a {
+    line-height: 3.4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+    display: flex;
+    flex-flow: row wrap; /* auto nowrap */
+}
+
+#homeLogo a .orange {
+    display: inline-flex;
+    color: #FF8C00;
+}
+
+#homeLogo a .block {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+#tabs {
+    /*border: 1px solid pink;*/
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-direction: row;
+    margin-right: 1.3rem;
+}
+
+#tabs a {
+    /*border: 1px solid green;*/
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0rem 0.8rem;
+}
+
+#tabs a:hover {
+    color: #FF8C00;
+}
+
+/* dropdown button */
+#tabs .dropbtn {
+    background: rgba(0,0,0,0.01);
+    color: white;
+    /*padding-right: 0;
+    padding-left: 0;*/
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    /*height: 1.5rem;*/
+    border: none;
+    padding: 1.4rem 0rem;
+    margin: 0rem 0.8rem;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#tabs .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#tabs .dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(255,255,255, 0.5);
+    min-width: 14rem;
+    z-index: 1;
+    /*z-index: 1;*/
+}
+
+/* Links inside the dropdown */
+#tabs .dropdown-content a {
+    padding: 0.7rem 0.8rem;
+    margin: 0rem 0rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+#tabs .dropdown-content a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Show the dropdown menu on hover */
+#tabs .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#tabs .dropdown:hover .dropbtn {
+    color: #FF8C00;
+}
+
+/* ------------------------------ HOME ------------------------------ */
+
+#home-index
+    {
+    background: #121010 url(Kammermusik18_0185.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    
+#alternative-background
+    {
+    display: none;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background: #121010 url(Kammermusik18_0086cut.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    }
+
+/* Intro */
+#home-index #intro
+    {
+    height: 100%;
+    }
+
+/* Proceed to content link */
+#home-index #slide-down-to-content
+    {
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    margin-left: -39px;
+    transition: 0.2s ease-in-out;
+  }
+    
+#home-index #slide-down-to-content:hover,
+#home-index #slide-down-to-content:active
+    {
+    opacity: 0.85;
+    }
+
+/* Container*/
+#home-index #container
+    {
+    min-height: 90%;
+    width: 90%;
+    margin-left: 9rem;
+    /*border: 1px solid white;*/
+    }
+    
+/*#home-index main
+    {
+    border: 1px solid pink;
+    width: 90%;
+    } */
+
+/* Dates */
+#home-index #upcoming-events
+    {
+    padding: 0;
+    float: left;
+    width: 73%;
+    /* vertical spacing of container */
+    margin: 4rem 1%;
+    font-size: 1.2rem;
+    }
+
+#home-index #upcoming-events table.upcoming-events thead
+    {
+    display: none;
+    }
+    
+#home-index td.dates {
+    background-color: #ffffff;
+    opacity: 0.85;
+    /*min width is width of most dates*/
+    width: 100px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+#home-index .clickable-row:hover > td > time {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+#home-index .clickable-row:hover > td {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#home-index table.upcoming-events tr:hover  {
+    outline: dashed thin white;
+}
