@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 /*#about {
@@ -12,7 +13,7 @@ html, body {
 
 #myTopnav {
     /*line-height: 2.6rem;*/
-    height: 15.2rem;
+    height: 12rem;
     /*position: fixed;*/
     top: 0;
     left: 0;
@@ -27,7 +28,7 @@ html, body {
 }
 
 #homeLogo {
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     /*margin-left: 1.5rem;*/
 }
@@ -35,7 +36,7 @@ html, body {
 #homeLogo a {
     color: black;
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
 }
@@ -55,11 +56,11 @@ html, body {
     /*border: 1px solid green;*/
     color: black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     padding: 1.4rem 0rem;
-    margin: 0rem 0.8rem;
+    margin: 0rem 0.2rem;
 }
 
 #tabs a:hover {
@@ -72,13 +73,13 @@ html, body {
     padding-left: 0;*/
     color: black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     /*height: 1.5rem;*/
     border: none;
     padding: 1.4rem 0rem;
-    margin: 0rem 0.8rem;
+    margin: 0rem 0.2rem;
     cursor: pointer;
 }
 
@@ -150,13 +151,15 @@ html, body {
     font-weight: 700;
     font-size: 11rem;
     text-transform: lowercase;
-    margin: 0.6rem 12rem;
+    margin: 0.6rem 14rem;
     transform: scale(1, .93);
 }
 
 /* ------------------------------ ABOUT ------------------------------ */
 
 #content .myContent {
+    /* text margin */
+    border: 1px solid black;
     margin: 7rem 14rem;
 }
 
@@ -170,12 +173,13 @@ html, body {
 
 }
 
-#content p {
+#content #mission p {
     padding: 0;
     margin: 2rem 0rem 0rem;
     line-height: 2.1rem;
     font-size: 1.4rem;
     font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
 
 }
 
@@ -187,4 +191,49 @@ html, body {
     border-top: 1.5px solid gray;
 }
 
+#content #board *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#content #board .column {
+  float: left;
+  width: 29.5%;
+  /*margin-bottom: 16px;*/
+  margin: 0 12px 16px 12px;
+  /*padding: 0 8px;*/
+}
+
+@media screen and (max-width: 650px) {
+#content #board .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+#content #board .container {
+  padding: 0 16px;
+}
+
+#content #board .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#content #board h2 {
+    padding: 0;
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#content #board .title {
+    padding: 0;
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
 
