@@ -80,6 +80,7 @@ html, body {
     /*padding-right: 0;
     padding-left: 0;*/
     color: black;
+    background-color: transparent;
     text-decoration: none;
     font-size: 0.95rem;
     font-family: "Open Sans", sans-serif;
