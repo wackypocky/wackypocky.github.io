@@ -12,9 +12,10 @@ body {
 
 h1
     {
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 700;
-    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    font-size: 3.1rem;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
     /*text-transform: uppercase;*/
     }
 
@@ -49,7 +50,7 @@ table {
 td {
     border: 0px solid transparent;
     background-clip: padding-box;
-    /*border-top-width: 1px;*/
+    border-top-width: 14px;
     border-bottom-width: 14px;
 }
 
@@ -57,9 +58,9 @@ tr > td + td {
   border-left-width: 27px;
 }
 
-/*tr + tr > td {
+tr + tr > td {
   border-top-width: 10px;
-}*/
+}
 
 table.upcoming-events {
     /*table-layout: fixed;*/
@@ -103,7 +104,7 @@ table.upcoming-events {
     /*font-size: 2rem;
     font-family: 'Nanum Myeongjo', serif;
     font-weight: 700;*/
-    font-size: 1.5rem;
+    font-size: 2.15rem;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
     display: flex;
@@ -135,8 +136,10 @@ table.upcoming-events {
     /*border: 1px solid green;*/
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    transform: scale(1, .96);
     text-transform: uppercase;
     /*to adjust vertically + media button*/
     padding: 0.4rem 0rem 1.2rem;
@@ -154,8 +157,10 @@ table.upcoming-events {
     /*padding-right: 0;
     padding-left: 0;*/
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    transform: scale(1, .96);
     text-transform: uppercase;
     border: none;
     padding: 0.4rem 0rem 1.2rem;
@@ -213,7 +218,7 @@ button:focus {outline:0;}
 
 #home-index
     {
-    background: #121010 url(Kammermusik18_0185.jpg) center no-repeat;
+    background: #121010 url(Kammermusik18_0185scale.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     }
@@ -226,7 +231,7 @@ button:focus {outline:0;}
     right: 0%;
     bottom: 0%;
     left: 0%;
-    background: #121010 url(Kammermusik18_0086cut.png) center no-repeat;
+    background: #121010 url(Kammermusik18_0086cutscale.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -279,13 +284,19 @@ button:focus {outline:0;}
     width: 73%;
     /* vertical spacing of container */
     margin: 4rem 1%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
     }
 
 #home-index #upcoming-events table.upcoming-events thead
     {
     display: none;
     }
+
+#home-index #upcoming-events table {
+    margin-top: 2rem;
+}
     
 #home-index td.dates {
     background-color: #ffffff;

@@ -156,17 +156,6 @@ html, body {
     margin: 0;
 }
 
-.hero-text {
-    color: white;
-    opacity: 0.9;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-size: 11rem;
-    text-transform: lowercase;
-    margin: 0.6rem 13rem;
-    transform: scale(1, .93);
-}
-
 /* ------------------------------ ABOUT ------------------------------ */
 
 #content .myContent {
