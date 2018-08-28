@@ -5,6 +5,12 @@ html, body {
     box-sizing: border-box;
 }
 
+body {
+    font-size: 1.1rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+}
+
 /*#about {
     background: none;
 }*/
@@ -139,10 +145,9 @@ html, body {
 /* fix the weird gray slice at the bottom of the media dropdown */
 /* ------------------------------ HEADER PHOTO ------------------------------ */
 
-/* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("2pianoscale.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("seho.jpg");
 
     /* Set a specific height */
     height: 67%;
@@ -157,11 +162,53 @@ html, body {
     margin: 0;
 }
 
+.overlay {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.overlay:hover {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("2pianoscale.jpg");
+    color: white;
+}
+
+.overlay:hover time {
+    color: white;
+}
+
+.overlay:hover #name {
+    color: white;
+}
+
+#overlay1 {
+    background-color: #fafafa; /*f5f5f5*/
+}
+
+#overlay2 {
+    background-color: #f0f0f0; /*ebebeb*/
+}
+
+#past {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    background-color: #c2c2c2;
+}
 /* ------------------------------ ABOUT ------------------------------ */
 
 #content .myContent {
     /* text margin */
-    /*border: 1px solid black;*/
+    /*border: 1px solid pink;*/
     margin: 6rem 12rem;
 }
 
@@ -176,7 +223,7 @@ html, body {
 #content h1 {
     padding: 0;
     margin: 0rem 0rem 1rem;
-    color: black; /* red-orange #ff6a32 */
+    color: #FF8C00; /* red-orange #ff6a32 */
     font-size: 3.1rem;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
@@ -189,17 +236,17 @@ html, body {
     line-height: 1.8rem;
     font-size: 1.1rem;
     font-family: "Fira Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 100;
 
 }
 
-#content hr {
+/*#content hr {
     display: block;
     margin: 0rem 7rem;
     padding: 0;
     border: 0;
     border-top: 1.5px solid gray;
-}
+}*/
 
 #content #board .row {
     display: flex;
@@ -286,7 +333,7 @@ html, body {
     font-size: 1.1rem;
 }
 
-#content #board h3 .title{
+#content h3 {
     padding: 0;
     margin: 0;
     font-family: "Fira Sans", sans-serif;
@@ -295,7 +342,51 @@ html, body {
     font-size: 1.1rem; /*13pt*/
 }
 
-#content #board h3 .datelocation {
-
+#content #upcoming h3 {
+    color: black;
+    text-transform: uppercase;
 }
+
+
+/* ------------------------------ EVENTS ------------------------------ */
+
+time {
+    text-transform: uppercase;
+}
+
+#events #content .myContent {
+    margin: 2.4rem 12rem;
+}
+
+#events h1 {
+    margin-top: 3.5rem;
+}
+
+#events p {
+    margin-top: 1.4rem;
+}
+
+#events table.past-events thead
+    {
+    display: none;
+    }
+
+#events table.past-events {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0;
+}
+
+#events #past h1 {
+    margin-top: 1.4rem;
+    color: black;
+}
+
+#events td.dates {
+    padding-right: 1.8rem;
+}
+
+#events table.past-events .row {
+    line-height: 1.8rem;
+}
+
 
