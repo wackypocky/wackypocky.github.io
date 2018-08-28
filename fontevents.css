@@ -8,7 +8,7 @@ html, body {
 body {
     font-size: 1rem;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 /*#about {
@@ -226,7 +226,7 @@ body {
     color: #FF8C00; /* red-orange #ff6a32 */
     font-size: 3rem;
     font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
+    font-weight: 700;
 
 }
 
@@ -236,7 +236,7 @@ body {
     line-height: 1.8rem;
     font-size: 1rem;
     font-family: "Fira Sans", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 
 }
 
