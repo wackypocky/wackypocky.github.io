@@ -161,7 +161,7 @@ html, body {
 
 #content .myContent {
     /* text margin */
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     margin: 6rem 12rem;
 }
 

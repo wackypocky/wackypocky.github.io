@@ -19,9 +19,14 @@
         <div class="topnav" id="myTopnav">
             <div id="homeLogo"> 
                 <a id="myHome" href="index.html" title="Return to home page">
-                    Princeton
-                    <div class="orange">Chamber Music</div>
-                    Society
+                    <div class="block">
+                        Princeton&nbsp;
+                        <div class="orange">Chamber&nbsp;</div> 
+                    </div>
+                    <div class="block">
+                        <div class="orange">Music&nbsp;</div> 
+                        Society
+                    </div>
                 </a>
             </div>
 
@@ -46,8 +51,8 @@
 
     <div id="content">
         <main>
-            <div class="overlay" id="overlay1">
-            <section id="upcoming" class="myContent">
+            <div class="overlay1" id="rebirth">
+            <section id="upcoming-rebirth" class="myContent">
                 <h3 class="datelocation">
                     <time datetime="2018-08-17">1 dec 2017</time>
                     -- McAlpin Hall
@@ -62,8 +67,8 @@
             </section>
         </div>
 
-        <div class="overlay" id="overlay2">
-            <section id="upcoming" class="myContent">
+        <div class="overlay2" id="extravaganza">
+            <section id="upcoming-extravaganza" class="myContent">
                 <h3 class="datelocation">
                     <time datetime="2018-08-17">1 DEC 2017</time>
                     -- Lee Hall
@@ -78,8 +83,8 @@
             </section>
         </div>
 
-        <div id="past">
-            <section id="upcoming" class="myContent">
+        <div class="overlay3" id="past">
+            <section id="past-events" class="myContent">
                 <header><h1>
                     Past events
                 </h1></header>
@@ -112,17 +117,41 @@
                 </table>
             </section>
         </div>
-        <!--
-        <section id="past" class="myContent">
-            <header><h1>
-                Opportunities
-            </h1></header>
-            <p>
-                    After being placed into a group at the beginning of the semester, or joining PCMS as a pre-formed group, you’ll be informed of concert and outreach opportunities that might be of interest to your group. In addition to more traditional performances, we collaborate each semester with a variety of programs on campus, presenting concerts ranging in theme from German Lieder and French Modernism to English music of the late eighteenth century. PCMS musicians also have the chance to mentor musicians in the Trenton Youth Orchestra through our outreach initiative, and our relationship with the Intercollegiate Chamber Music Festival allows PCMS groups to perform in NYC and participate in masterclasses with musicians from the Chamber Music Society of Lincoln Center.
-                </p>
-        </section>-->
         </main>
     </div>
+
+    <footer id="site-footer">
+        <div id="myFooter1">
+        <form action="/action_page.php">
+            <div>
+                <h3>Join our mailing list</h3>
+            </div>
+            <div id="sign-up">            
+                <div class="form">
+                <input type="text" placeholder="Email Address" name="mail" required>
+            </div>
+            <div class="button">
+                <input type="submit" value="Sign Up">
+            </div>
+        </div>
+        </form>
+    </div>
+        <div id="myFooter2">
+            <div id="social">
+            <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
+                <img src="fb.png">
+            </a>
+            <!--<a href id="instagram">
+                <img src="ig.png">
+            </a>-->
+        </div>
+            <div class="creds">
+                Copyright (c) 2018 Princeton Chamber Music Society
+            </div>
+            <div class="creds">
+                Website Design by The Zhous
+        </div>
+    </footer>
 </body>
 </html>
 

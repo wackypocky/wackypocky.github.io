@@ -36,6 +36,7 @@ body {
 #homeLogo {
     margin-top: 4rem;
     display: flex;
+    padding: 0;
     /*margin-left: 1.5rem;*/
 }
 
@@ -45,11 +46,18 @@ body {
     font-size: 2rem;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
+    display: flex;
+    flex-flow: row wrap; /* auto nowrap */
 }
 
 #homeLogo a .orange {
     display: inline-flex;
     color: #FF8C00;
+}
+
+#homeLogo a .block {
+    display: inline-flex;
+    flex-wrap: nowrap;
 }
 
 #tabs {
@@ -162,7 +170,10 @@ body {
     margin: 0;
 }
 
-.overlay {
+
+/* first type of gray */
+.overlay1 {
+    background-color: #fafafa; /*f5f5f5*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,29 +183,58 @@ body {
     margin: 0;
 }
 
-.overlay:hover {
+.overlay1:hover time {
+    color: white;
+}
+
+.overlay1:hover #name {
+    color: white;
+}
+
+/* second type of gray */
+.overlay2 {
+    background-color: #f0f0f0; /*ebebeb*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.overlay2:hover time {
+    color: white;
+}
+
+.overlay2:hover #name {
+    color: white;
+}
+
+/* alternating sections in about */
+#about .overlay1:hover {
+    background-image: none;
+}
+
+#about .overlay2:hover {
+    background-image: none;
+}
+
+/* choose underlying photos for each event */
+#rebirth:hover {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("2pianoscale.jpg");
     color: white;
 }
 
-.overlay:hover time {
+#extravaganza:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("2pianoscale.jpg");
     color: white;
 }
 
-.overlay:hover #name {
-    color: white;
-}
-
-#overlay1 {
-    background-color: #fafafa; /*f5f5f5*/
-}
-
-#overlay2 {
-    background-color: #f0f0f0; /*ebebeb*/
-}
-
-#past {
+/* past events section, no hover */
+.overlay3 {
+    background-color: #c2c2c2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,14 +242,118 @@ body {
     display: flex;
     align-items: flex-end;
     margin: 0;
-    background-color: #c2c2c2;
 }
+
+/* ------------------------------ Footer ------------------------------ */
+
+#myFooter1 {
+    background: #FF8C00;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+    z-index: 1;
+    padding: 2.4rem 0rem;
+}
+
+footer h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+footer #sign-up {
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer input[type=text], input[type=submit] {
+    height: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 0.08rem solid black;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+footer input[type=text] {
+    width: 25rem;
+    font-style: italic;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: #FF8C00;
+    font-weight: 500;
+    border: none;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+    padding: 0rem 1.5rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+
+/* so there is no outline on media button when clicked */
+button:focus {outline:0;}
+input:focus {outline:0;}
+
+#myFooter2 {
+    color: white;
+    background: black;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    /* less padding to compensate for image border */
+    padding-top: 1.8rem;
+    padding-bottom: 2.4rem;
+}
+
+#social {
+    margin-bottom: 1.5rem;
+}
+
+#social img {
+    width: 3.2rem;
+    height: auto;
+}
+
 /* ------------------------------ ABOUT ------------------------------ */
 
 #content .myContent {
     /* text margin */
     /*border: 1px solid pink;*/
-    margin: 6rem 12rem;
+    /* vertical and horizontal margins */
+    margin: 4.5rem 12rem;
 }
 
 #content #mission h1 {
@@ -272,11 +416,13 @@ body {
     margin-top: 1rem;
 }
 
+
+/* media queries */
 @media screen and (max-width: 1000px) {
 
     #content .myContent {
     /* text margin */
-    margin: 7rem 10.5rem;
+    margin: 4.5rem 10.5rem;
 }
 
     #content #board .column {
@@ -308,23 +454,24 @@ body {
 /* tablet */
 @media screen and (max-width: 768px) {
     #content .myContent {
-    margin: 7rem 8rem;
+    margin: 4.5rem 8rem;
 }
 }
 
 /* bigger mobile */
 @media screen and (max-width: 480px) {
     #content .myContent {
-    margin: 7rem 1rem;
+    margin: 4.5rem 1rem;
 }
 }
 
 @media screen and (max-width: 320px) {
     #content .myContent {
-    margin: 7rem 0.5rem;
+    margin: 4.5rem 0.5rem;
 }
 }
 
+/* could all be combined? */
 #content #board h2 {
     padding: 0;
     margin: 0;
@@ -337,13 +484,16 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Fira Sans", sans-serif;
-    font-style: italic;
     font-weight: 300;
     font-size: 1rem; /*13pt*/
+    color: black;
 }
 
-#content #upcoming h3 {
-    color: black;
+#content .title {
+    font-style: italic;
+}
+
+#events #content h3 {
     text-transform: uppercase;
 }
 
@@ -358,34 +508,34 @@ time {
     margin: 2.4rem 12rem;
 }
 
-#events h1 {
+#events #content h1 {
     margin-top: 3.5rem;
 }
 
-#events p {
+#events #content p {
     margin-top: 1.4rem;
 }
 
-#events table.past-events thead
+#events #content table.past-events thead
     {
     display: none;
     }
 
-#events table.past-events {
+#events #content table.past-events {
     margin: 1rem 0rem 0rem 0rem;
     padding: 0;
 }
 
-#events #past h1 {
+#events #content #past h1 {
     margin-top: 1.4rem;
     color: black;
 }
 
-#events td.dates {
+#events #content td.dates {
     padding-right: 1.8rem;
 }
 
-#events table.past-events .row {
+#events #content table.past-events .row {
     line-height: 1.8rem;
 }
 
