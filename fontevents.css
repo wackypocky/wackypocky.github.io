@@ -281,7 +281,7 @@ footer #sign-up {
     justify-content: space-between;
 }
 
-footer input[type=text], input[type=submit] {
+footer input[type=email], input[type=submit] {
     height: 100%;
     font-family: "Fira Sans", sans-serif;
     font-weight: 300;
@@ -292,7 +292,7 @@ footer input[type=text], input[type=submit] {
     box-sizing: border-box;
 }
 
-footer input[type=text] {
+footer input[type=email] {
     width: 25rem;
     font-style: italic;
 }
@@ -308,16 +308,16 @@ input[type=submit] {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: black;
+    color: #330f00;
     opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: black;
+    color: #330f00;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: black;
+    color: #330f00;
 }
 
 /* so there is no outline on media button when clicked */
@@ -345,6 +345,13 @@ input:focus {outline:0;}
 #social img {
     width: 3.2rem;
     height: auto;
+}
+
+.creds {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.83rem;
+    line-height: 1.4rem;
 }
 
 /* ------------------------------ ABOUT ------------------------------ */
