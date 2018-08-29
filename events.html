@@ -1,3 +1,18 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="your@email.address";
+    $subject="Form to email message";
+    $senderEmail=$_POST["senderEmail"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -41,7 +56,7 @@
                 </div>
                 <a href="#events" class="active">Events</a>
                 <a href="#audition">Audition</a>
-                <a href="#contact">Contact</a>
+                <a href="contact.php">Contact</a>
                 <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>-->
