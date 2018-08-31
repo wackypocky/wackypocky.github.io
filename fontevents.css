@@ -555,8 +555,7 @@ time {
 
 
 #contact #content .myContent {
-    
-    margin: 3.4rem 28rem;
+    margin: 3.4rem 20rem;
 }
 
 #contact #content p {
@@ -564,7 +563,8 @@ time {
 }
 
  #contact #content .overlay2 {
-    align-items: flex-start;
+    border: 1px solid pink;
+    align-items: center;
     flex-direction: column;
  }
 
@@ -589,13 +589,12 @@ time {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 1rem;
  }
 
 #contact #content input[type=text], #contact #content input[type=email] {
     text-transform: lowercase;
     border: none;
-    width: 44%;
+    flex: 0 0 44.5%;
     line-height: 1.8rem;
     font-size: 1rem;
     font-family: "Fira Sans", sans-serif;
@@ -603,7 +602,12 @@ time {
     font-style: italic;
     background-color: #dbdbdb;
     padding: 0.5rem 0.9rem;
+    margin-bottom: 1rem;
 }
+
+/*#contact #content input[type=text] {
+    margin-right: 1.5rem;
+}*/
 
 #contact #content #bottom-row {
     display: flex;
@@ -626,6 +630,43 @@ time {
     background-color: #dbdbdb;
 }
 
+/* media queries */
+@media screen and (max-width: 1050px) {
+    #contact #content .myContent {
+        margin: 3.4rem 12rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #contact #content .myContent {
+        margin: 3.4rem 8rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    #contact #content input[type=text], #contact #content input[type=email] {
+        flex: 1 0 44.5%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #contact #content .myContent {
+        margin: 3.4rem 4.2rem;
+    }
+}
+
+/* bigger mobile */
+@media screen and (max-width: 480px) {
+    #contact #content .myContent {
+    margin: 3.4rem 1rem;
+}
+}
+
+@media screen and (max-width: 320px) {
+    #content .myContent {
+    margin: 3.4rem 0.5rem;
+}
+}
 
 #contact #content ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #a6a6a6;
@@ -659,3 +700,4 @@ time {
     background-color: #FF8C00;
     color: white;
 }
+
