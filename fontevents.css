@@ -297,32 +297,37 @@ footer input[type=email] {
     font-style: italic;
 }
 
-input[type=submit] {
-    background-color: black;
-    color: #FF8C00;
+footer input[type=submit] {
+    background-color: transparent;
+    color: black;
     font-weight: 500;
-    border: none;
+    border: 0.125rem solid black;
     margin-left: 1.5rem;
     text-transform: uppercase;
     padding: 0rem 1.5rem;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+footer input[type=submit]:hover {
+    background-color: black;
+    color: #FF8C00;
+}
+
+footer ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #330f00;
     opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+footer :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #330f00;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+footer ::-ms-input-placeholder { /* Microsoft Edge */
     color: #330f00;
 }
 
 /* so there is no outline on media button when clicked */
-button:focus {outline:0;}
-input:focus {outline:0;}
+footer button:focus {outline:0;}
+footer input:focus {outline:0;}
 
 #myFooter2 {
     color: white;
@@ -358,7 +363,7 @@ input:focus {outline:0;}
 
 #content .myContent {
     /* text margin */
-    /*border: 1px solid pink;*/
+    /*border: 1px solid blue;*/
     /* vertical and horizontal margins */
     margin: 4.5rem 12rem;
 }
@@ -546,4 +551,111 @@ time {
     line-height: 1.8rem;
 }
 
+/* ------------------------------ CONTACT ------------------------------ */
 
+
+#contact #content .myContent {
+    
+    margin: 3.4rem 28rem;
+}
+
+#contact #content p {
+    margin: 0;
+}
+
+ #contact #content .overlay2 {
+    align-items: flex-start;
+    flex-direction: column;
+ }
+
+#contact #content .overlay2 .mySection {
+    flex: 1;
+}
+
+#contact #content #bold-email {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+#contact #content #contact-us {
+    margin-bottom: 3rem;
+}
+
+#contact #content #contact-form {
+    margin-top: 3rem;
+}
+
+#contact #content #top-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+ }
+
+#contact #content input[type=text], #contact #content input[type=email] {
+    text-transform: lowercase;
+    border: none;
+    width: 44%;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    background-color: #dbdbdb;
+    padding: 0.5rem 0.9rem;
+}
+
+#contact #content #bottom-row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+ }
+
+#contact #content textarea {
+    padding: 0.5rem 0.9rem;
+    height: 12rem;
+    text-transform: lowercase;
+    flex: 1;
+    resize: none;
+    border: none;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    background-color: #dbdbdb;
+}
+
+
+#contact #content ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a6a6a6;
+    opacity: 1; /* Firefox */
+}
+#contact #content :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #a6a6a6;
+}
+
+#contact #content ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #a6a6a6;
+}
+
+#contact #content #button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact #content input[type=submit] {
+    line-height: 2.4rem;
+    background-color: #dbdbdb;
+    color: #FF8C00;
+    font-weight: 400;
+    border: 0.125rem solid transparent;
+    text-transform: uppercase;
+    padding: 0rem 0.6rem;
+}
+
+#contact #content input[type=submit]:hover {
+    border: 0.125rem solid #FF8C00;
+    background-color: #FF8C00;
+    color: white;
+}
