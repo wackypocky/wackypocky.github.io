@@ -155,6 +155,8 @@ body {
 }
 
 #hamburger {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     display: inline-block;
     cursor: pointer;
 }
@@ -310,12 +312,13 @@ header button:focus {
   }
 }
 */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     #homeLogo {
         margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
     #homeLogo a {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     #tabs a {
         display: none;
@@ -334,6 +337,15 @@ header button:focus {
     }
     #tabs .icon {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #homeLogo {
+        margin-top: 1rem;
+    }
+    #homeLogo a {
+        font-size: 1.3rem;
     }
 }
 
