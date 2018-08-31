@@ -42,12 +42,32 @@
                 <a href="events.html" class="active">Events</a>
                 <a href="#audition">Audition</a>
                 <a href="contact.html">Contact</a>
-                <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>-->
+                <a href="javascript:void(0);" class="icon">
+                    <div id="hamburger" onclick="change(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
+
+    <header id="mobile-menu">
+        <div id="hamburger-menu">
+                <a href="about.html">About</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Media</button>
+                </div>
+                <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Photos</a>
+                        <a href="#">Videos & Recordings</a>
+                </div>
+                <a href="events.html" class="active">Events</a>
+                <a href="#audition">Audition</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </header>
 
     <div id="content">
         <main>
