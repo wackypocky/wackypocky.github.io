@@ -34,9 +34,8 @@ body {
 }
 
 #homeLogo {
-    margin-top: 4rem;
+    padding-top: 0.5rem;
     display: flex;
-    padding: 0;
     /*margin-left: 1.5rem;*/
 }
 
@@ -155,8 +154,8 @@ body {
 }
 
 #hamburger {
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     padding-left: 0.3rem;
     display: inline-block;
     cursor: pointer;
@@ -167,8 +166,9 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    min-height: 17.8rem;
     background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 #hamburger-menu a {
@@ -186,9 +186,9 @@ body {
     text-align: center;*/
 }
 
-/*#hamburger-menu a:hover {
+#hamburger-menu a:hover, #hamburger-menu .dropbtn:hover {
     background: rgba(255,255,255, 0.5);
-} */
+} 
 
 #hamburger-menu .active {
     border-top: 0.08rem solid white;
@@ -200,6 +200,7 @@ body {
     width: 100%;
     text-align: center;
 }
+
 /* dropdown button */
 #hamburger-menu .dropbtn {
     /*padding-right: 0;
@@ -319,7 +320,7 @@ header button:focus {
         margin-bottom: 1.5rem;
     }
     #homeLogo a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     #tabs a {
         display: none;
@@ -332,9 +333,11 @@ header button:focus {
     #tabs {
         background-color: black;
         min-width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
     }
     #myTopnav {
-        height: 6.5rem;
+        height: 0rem;
+        min-height: 8rem;
     }
     #tabs .icon {
         display: flex;
@@ -346,7 +349,7 @@ header button:focus {
         margin-top: 1rem;
     }
     #homeLogo a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
