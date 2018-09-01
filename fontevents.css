@@ -155,8 +155,9 @@ body {
 }
 
 #hamburger {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    padding-left: 0.3rem;
     display: inline-block;
     cursor: pointer;
 }
@@ -166,9 +167,8 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    min-height: 16rem;
+    min-height: 17.8rem;
     background-color: black;
-    padding-top: 0.8rem;
 }
 
 #hamburger-menu a {
@@ -242,7 +242,8 @@ body {
 .bar1, .bar2, .bar3 {
     width: 21px;
     height: 2.6px;
-    background-color: #FF8C00;
+    background-color: white;
+    opacity: 0.8;
     margin: 3.4px 0;
     transition: 0.4s;
 }
@@ -333,7 +334,7 @@ header button:focus {
         min-width: 100%;
     }
     #myTopnav {
-        height: 6rem;
+        height: 6.5rem;
     }
     #tabs .icon {
         display: flex;
@@ -503,7 +504,7 @@ footer input[type=submit] {
     border: 0.125rem solid black;
     margin-left: 1.5rem;
     text-transform: uppercase;
-    padding: 0rem 1.5rem;
+    padding: 0.1rem 1.5rem 0rem;
 }
 
 footer input[type=submit]:hover {
@@ -560,14 +561,24 @@ footer input:focus {outline:0;}
 
 /* bigger mobile */
 @media screen and (max-width: 500px) {
+    footer #sign-up {
+        flex-direction: column;
+        align-items: center;
+        line-height: 4rem;
+    }
+
+    footer input[type=submit] {
+        padding: 0.4rem 1rem;
+    }
+
     footer input[type=email] {
-        width: 18rem;
+        width: 22rem;
     }
 }
 
 @media screen and (max-width: 320px) {
     footer input[type=email] {
-        width: 12rem;
+        width: 18rem;
     }
 }
 
@@ -685,14 +696,15 @@ footer input:focus {outline:0;}
 /* bigger mobile */
 @media screen and (max-width: 480px) {
     #content .myContent {
-    margin: 4.5rem 1rem;
+        margin: 4.5rem 1rem;
+        text-align: center;
 }
 }
 
 @media screen and (max-width: 320px) {
     #content .myContent {
-    margin: 4.5rem 0.5rem;
-}
+        margin: 4.5rem 0.5rem;
+    }
 }
 
 /* could all be combined? */
@@ -701,6 +713,7 @@ footer input:focus {outline:0;}
     margin: 0;
     font-family: "Fira Sans", sans-serif;
     font-weight: 500;
+    line-height: 1.5rem;
     font-size: 1rem;
 }
 
@@ -711,6 +724,10 @@ footer input:focus {outline:0;}
     font-weight: 300;
     font-size: 1rem; /*13pt*/
     color: black;
+}
+
+#content #board h3 {
+    line-height: 1.5rem;
 }
 
 #content .title {
@@ -756,6 +773,7 @@ time {
 }
 
 #events #content td.dates {
+    vertical-align: top;
     padding-right: 1.8rem;
 }
 
@@ -774,6 +792,12 @@ time {
 @media screen and (max-width: 820px) {
     #events #content .myContent {
         margin: 2.4rem 7rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #events #content td.dates {
+        min-width: 5.5rem;
     }
 }
 
@@ -802,7 +826,7 @@ time {
 }
 
  #contact #content .overlay2 {
-    border: 1px solid pink;
+    /*border: 1px solid pink;*/
     align-items: center;
     flex-direction: column;
  }
@@ -926,17 +950,17 @@ time {
 
 #contact #content input[type=submit] {
     line-height: 2.4rem;
-    background-color: #dbdbdb;
+    /*background-color: #dbdbdb;*/
     color: #FF8C00;
     font-weight: 400;
-    border: 0.125rem solid transparent;
+    border: 0.125rem solid #c2c2c2;
     text-transform: uppercase;
-    padding: 0rem 0.6rem;
+    padding: 0.15rem 0.6rem 0rem;
 }
 
 #contact #content input[type=submit]:hover {
     border: 0.125rem solid #FF8C00;
     background-color: #FF8C00;
-    color: white;
+    color: #f0f0f0;
 }
 
