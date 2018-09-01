@@ -162,13 +162,12 @@ body {
 }
 
 #hamburger-menu {
-    /*border: 1px solid white;*/
     display: none;
     flex-direction: column;
     align-items: center;
     background-color: black;
     padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 4rem;
 }
 
 #hamburger-menu a {
@@ -333,7 +332,6 @@ header button:focus {
     #tabs {
         background-color: black;
         min-width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
     }
     #myTopnav {
         height: 0rem;
@@ -386,7 +384,7 @@ header button:focus {
     margin: 0;
 }
 
-.overlay1:hover time {
+.overlay1:hover #datelocation {
     color: white;
 }
 
@@ -406,7 +404,7 @@ header button:focus {
     margin: 0;
 }
 
-.overlay2:hover time {
+.overlay2:hover #datelocation {
     color: white;
 }
 
@@ -567,15 +565,16 @@ footer input:focus {outline:0;}
     footer #sign-up {
         flex-direction: column;
         align-items: center;
-        line-height: 4rem;
     }
 
     footer input[type=submit] {
         padding: 0.4rem 1rem;
+        margin: 0;
     }
 
     footer input[type=email] {
         width: 22rem;
+        margin-bottom: 1.8rem;
     }
 }
 
@@ -643,6 +642,7 @@ footer input:focus {outline:0;}
     flex-flow: row wrap;
     /*border: 1px solid pink;*/
     width: 31%;
+    padding-bottom: 1rem;
     margin: 0rem 0rem 1rem 1.06rem;
 }
 
@@ -699,14 +699,14 @@ footer input:focus {outline:0;}
 /* bigger mobile */
 @media screen and (max-width: 480px) {
     #content .myContent {
-        margin: 4.5rem 1rem;
+        margin: 4.5rem 1.33rem;
         text-align: center;
 }
 }
 
 @media screen and (max-width: 320px) {
     #content .myContent {
-        margin: 4.5rem 0.5rem;
+        padding: 4.5rem 0.665rem;
     }
 }
 
@@ -756,6 +756,7 @@ time {
     margin-top: 3.5rem;
 }
 
+
 #events #content p {
     margin-top: 1.4rem;
 }
@@ -773,6 +774,10 @@ time {
 #events #content #past h1 {
     margin-top: 1.4rem;
     color: black;
+}
+
+#events #content #past table {
+    margin-bottom: 1.4rem;
 }
 
 #events #content td.dates {
@@ -807,8 +812,16 @@ time {
 /* bigger mobile */
 @media screen and (max-width: 480px) {
     #events #content .myContent {
-    margin: 2.4rem 1rem;
-}
+        margin: 2.4rem 1rem;
+    }
+
+    #events #content #past td {
+        text-align: left;
+    }
+
+    #events #content #past td.dates {
+        text-align: right;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -956,7 +969,7 @@ time {
     /*background-color: #dbdbdb;*/
     color: #FF8C00;
     font-weight: 400;
-    border: 0.125rem solid #c2c2c2;
+    border: 0.125rem solid #FF8C00;
     text-transform: uppercase;
     padding: 0.15rem 0.6rem 0rem;
 }
