@@ -1,0 +1,177 @@
+#photos #content .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+#photos #content .column {
+    object-fit: contain;
+    display: flex;
+    flex-flow: row wrap;
+    width: 31%;
+    padding-bottom: 1rem;
+    margin: 0rem 0rem 1rem 1.06rem;
+}
+
+#photos #content .column:nth-child(3n+1) {
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+#photos #content .container {
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #content .myContent {
+    /* text margin *//*
+    margin: 4.5rem 10.5rem;
+}
+
+    #photos #content .column {
+        width: 48%;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    #photos #content .column:nth-child(2n+1) {
+        margin: 0rem 1.06rem 1rem 0rem;
+    }
+}
+
+@media screen and (max-width: 861px) {
+
+    #photos #content .column {
+        width: 100%;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    #photos #content .column:nth-child(2n+1) {
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    #photos #content .column:nth-child(3n+1) {
+    margin: 0rem 0rem 1rem 0rem;
+}
+}
+
+/* tablet *//*
+@media screen and (max-width: 768px) {
+    #content .myContent {
+    margin: 4.5rem 7rem;
+}
+}
+
+/* bigger mobile *//*
+@media screen and (max-width: 480px) {
+    #content .myContent {
+        margin: 4.5rem 1.33rem;
+        text-align: center;
+}
+}
+
+@media screen and (max-width: 320px) {
+    #content .myContent {
+        padding: 4.5rem 0.665rem;
+    }
+}
+*/
+
+/*
+#photos #content * {
+    box-sizing: border-box;
+}
+
+#photos #content .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+/*#photos #content .column {
+    flex: 23%;
+    max-width: 25%;
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+#photos #content .column:nth-child(4n+1) {
+    margin: 0;
+}
+
+#photos .column img {
+    margin-top: 2rem;
+    vertical-align: middle;
+}
+/*
+/*#photos .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0 4px;
+}
+
+#photos .column {
+    flex: 23%;
+    max-width: 23%;
+    padding: 0 0 0 2rem;
+}
+
+#photos #content .column:nth-child(4n+1) {
+    padding: 0;
+}
+
+#photos .column img {
+    margin-top: 2rem;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1435px) {
+
+    #photos .column {
+        flex: 30%;
+        max-width: 31.6%;
+    }
+
+    #photos #content .column:nth-child(3n+1) {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #photos .column {
+        flex: 47%;
+        max-width: 48%;
+    }
+
+    #photos #content .column:nth-child(2n+1) {
+        padding: 0;
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/*@media (max-width: 800px) {
+    
+    #photos .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    #photos #content .column:nth-child(2n+1) {
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    #photos #content .column:nth-child(3n+1) {
+    margin: 0rem 0rem 1rem 0rem;
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*@media (max-width: 600px) {
+    #photos.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

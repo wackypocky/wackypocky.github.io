@@ -47,6 +47,17 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showPhotos(x) {
+    x.classList.toggle("minus");
+    var x = document.getElementById("drop-row");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="fontevents.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jvs.scripts.js"></script>
+    <script type="text/javascript" src="myjs.scripts.js"></script>
+    <title>Princeton Chamber Music Ensemble</title>
+</head>
+
+<body id="photos">
+    <header id="site-header">
+        <div class="topnav" id="myTopnav">
+            <div id="homeLogo"> 
+                <a id="myHome" href="index.html" title="Return to home page">
+                    <div class="block">
+                        Princeton&nbsp;
+                        <div class="orange">Chamber&nbsp;</div> 
+                    </div>
+                    <div class="block">
+                        <div class="orange">Music&nbsp;</div> 
+                        Society
+                    </div>
+                </a>
+            </div>
+
+            <div id="tabs">
+                <a href="about.html">About</a>
+                <div class="dropdown">
+                    <button class="dropbtn" id="active">Media</button>
+                    <div class="dropdown-content">
+                        <a href="photos.html" class="dropdown-active">Photos</a>
+                        <a href="#">Videos & Recordings</a>
+                    </div>
+                </div>
+                <a href="events.html">Events</a>
+                <a href="#audition">Audition</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon">
+                    <div id="hamburger" onclick="change(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <header id="mobile-menu">
+        <div id="hamburger-menu">
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()" id="active">Media</button>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="photos.html" class="dropdown-active">Photos</a>
+                <a href="#">Videos & Recordings</a>
+            </div>
+            <a href="events.html">Events</a>
+            <a href="#audition">Audition</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div id="content">
+        <main>
+            <div class="w3-content w3-display-container" id="img-container">
+                <img class="mySlides" id="group" src="group.jpg">
+                <img class="mySlides" id="2pianoscale" src="2pianoscale.jpg">
+                <img class="mySlides" src="jacob.jpg">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left" onclick="plusSlides(-1)">&#10216;</div>
+                    <div class="w3-right" onclick="plusSlides(1)">&#10217;</div>
+                    <span class="w3-badge" onclick="currentSlide(1)"></span>
+                    <span class="w3-badge" onclick="currentSlide(2)"></span>
+                    <span class="w3-badge" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="overlay2" >
+                <section id="photos" class="myContent">
+                    <header><h1>
+                        Event Photos
+                    </h1></header>
+                    <div id="box">
+                    <button class="photo-drop" onclick="showPhotos()">
+                    <div class="plus">
+                        <div class="plus1"></div>
+                        <div class="plus2"></div>
+                    </div>
+                &nbsp;&nbsp;&nbsp;Triumph and Tragedy - Fall 2016</button>
+                    <button class="photo-drop" onclick="showPhotos()">
+                    <div class="plus">
+                        <div class="plus1"></div>
+                        <div class="plus2"></div>
+                    </div>
+                &nbsp;&nbsp;&nbsp;Nightfall - Spring 2016</button>
+                    <button class="photo-drop" onclick="showPhotos(this)">
+                        <div class="plus">
+                        <div class="plus1"></div>
+                        <div class="plus2"></div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;Wanderlust - Spring 2017</button>
+                    <div id="drop-row" style="display:none">
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <img src="john.jpg" alt="John" style="width:100%">
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <img src="janice.jpg" alt="Janice" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="john.jpg" alt="John" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="henry.jpg" alt="Henry" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="annie.jpg" alt="Annie" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="john.jpg" alt="John" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="lou1.jpg" alt="Lou" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <button class="photo-drop" onclick="showPhotos()">
+                    <div class="plus">
+                        <div class="plus1"></div>
+                        <div class="plus2"></div>
+                    </div>
+                &nbsp;&nbsp;&nbsp;Act II - Spring 2018</button>
+            </div>
+                </section>
+            </div>
+</main>
+</div>
+
+<footer id="site-footer">
+        <div id="myFooter1">
+        <form action="/action_page.php">
+            <div>
+                <h3>Join our mailing list</h3>
+            </div>
+            <div id="sign-up">            
+                <div class="form">
+                <input type="email" placeholder="Email Address" name="mail" required>
+            </div>
+            <div class="button">
+                <input type="submit" value="Sign Up">
+            </div>
+        </div>
+        </form>
+    </div>
+        <div id="myFooter2">
+            <div id="social">
+            <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
+                <img src="fb.png">
+            </a>
+            <!--<a href id="instagram">
+                <img src="ig.png">
+            </a>-->
+        </div>
+            <div class="creds">
+                Copyright (c) 2018 Princeton Chamber Music Society
+            </div>
+            <div class="creds">
+                Website Design by The Zhous
+        </div>
+    </footer>
+
+<script>
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("w3-badge");
+
+    showSlides();
+
+    function showSlides() {    
+        var i;    
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function currentSlide(no) {
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex = no;
+    slides[no-1].style.display = "block";
+}
+
+function plusSlides(n) {
+    var newslideIndex = slideIndex + n;
+    if(newslideIndex < 4 && newslideIndex > 0){
+        currentSlide(newslideIndex);
+    }
+}
+</script>
+
+</body>
+</html> 
