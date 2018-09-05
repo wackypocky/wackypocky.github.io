@@ -11,6 +11,9 @@ body {
     font-weight: 300;
 }
 
+input[type=submit] {
+    cursor: pointer;
+}
 /*#about {
     background: none;
 }*/
@@ -752,7 +755,7 @@ footer input:focus {outline:0;}
     margin: 0;
     font-family: "Fira Sans", sans-serif;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-size: 1rem;
 }
 
@@ -766,7 +769,7 @@ footer input:focus {outline:0;}
 }
 
 #content #board h3 {
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 #content .title {
@@ -888,7 +891,7 @@ time {
     flex: 1;
 }
 
-#contact #content #bold-email {
+#content .bold-link {
     text-decoration: none;
     color: black;
     font-weight: 500;
