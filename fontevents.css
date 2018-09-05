@@ -818,7 +818,8 @@ time {
 
 #events #content td.dates {
     vertical-align: top;
-    padding-right: 1.8rem;
+    width: 5rem;
+    padding-right: 1.5rem;
 }
 
 #events #content table.past-events .row {
@@ -1244,8 +1245,20 @@ background-color: white;
 #audition #content .myContent {
     width: 100%;
 }
-#audition #overlay1 {
+
+#content .myContent .first {
+    /*margin: 0;*/
+}
+/*#audition #overlay1 {
     z-index: 0;
+}*/
+
+#audition .link {
+    color: black;
+}
+
+#audition #important {
+    font-weight: 400;
 }
 
 /* ------------------------------ Videos ------------------------------ */
