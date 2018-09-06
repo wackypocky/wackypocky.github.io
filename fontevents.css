@@ -420,7 +420,7 @@ header button:focus {
 
 #about-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("2pianoscale.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("km18.jpg");
 
 }
 
@@ -475,14 +475,19 @@ header button:focus {
 }
 
 /* choose underlying photos for each event */
-#rebirth:hover {
+#ccp:hover {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("2pianoscale.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("ccp1.png");
     color: white;
 }
 
-#extravaganza:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("2pianoscale.jpg");
+#tigers:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("group.jpg");
+    color: white;
+}
+
+#england:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("gainsborough.jpg");
     color: white;
 }
 
