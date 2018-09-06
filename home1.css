@@ -342,15 +342,29 @@
     margin:4.5rem 1.33rem;
 }
 
+#home-index
+    {
+    min-width: 100%;
+    background: #121010 url(homealt.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
 
 #home-index #site-header {
     margin-top: 0rem;
 }
 
-#home-index #intro
+#alternative-background {
+    height: 0%;
+}
+
+#home-index #intro {
+    height: 86%;
+}
+    #home-index #slide-down-to-content
     {
-    height: 90%;
-    }
+    display: none;
+  }
 
     #home-index #myTopnav {
     height: 12.7rem;
