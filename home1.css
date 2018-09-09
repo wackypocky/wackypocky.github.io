@@ -273,7 +273,6 @@
 
 
 #home-index #content {
-    min-height: 65%;
     margin: 0;
     background-color: white;
     background-size: cover;
@@ -287,7 +286,7 @@
 
 #home-index .overlay1 {
     min-height: 100%;
-    background-color: white;
+    background-color: #fafafa;
 }
 
 #home-index #content table.upcoming-events thead
@@ -343,13 +342,13 @@
     margin:4.5rem 1.33rem;
 }
 
-#home-index
+/*#home-index
     {
     min-width: 100%;
     background: #121010 url(homealt.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    }
+    }*/
 
 #home-index #site-header {
     margin-top: 0rem;
