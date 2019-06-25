@@ -392,7 +392,7 @@ header button:focus {
 
 #about-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("km18.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("img/about/km18.jpg");
 }
 
 /* first type of gray */
@@ -450,17 +450,17 @@ header button:focus {
 #nacht:hover {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg).
     This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("schonberg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/events/schonberg.jpg");
   color: white;
 }
 
 #medicine:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("medicine.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("img/events/gainsborough.jpg");
   color: white;
 }
 
 #thanks:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("km14.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("img/km14.jpg");
   color: white;
 }
 
