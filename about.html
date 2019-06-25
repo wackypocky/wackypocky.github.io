@@ -2,229 +2,257 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="fontevents.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jvs.scripts.js"></script>
-    <script type="text/javascript" src="myjs.scripts.js"></script>
-    <title>Princeton Chamber Music Ensemble</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126022641-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126022641-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="fontevents.css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jvs.scripts.js"></script>
+  <script type="text/javascript" src="myjs.scripts.js"></script>
+  <title>Princeton Chamber Music Society</title>
 </head>
 
 <body id="about">
-    <header id="site-header">
-        <div class="topnav" id="myTopnav">
-            <div id="homeLogo"> 
-                <a id="myHome" href="index.html" title="Return to home page">
-                    <div class="block">
-                        Princeton&nbsp;
-                        <div class="orange">Chamber&nbsp;</div> 
-                    </div>
-                    <div class="block">
-                        <div class="orange">Music&nbsp;</div> 
-                        Society
-                    </div>
-                </a>
-            </div>
+  <header id="site-header">
 
-            <div id="tabs">
-                <a href="about.html" class="active">About</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Media</button>
-                    <div class="dropdown-content">
-                        <a href="photos.html">Photos</a>
-                        <a href="videos.html">Videos & Recordings</a>
-                    </div>
-                </div>
-                <a href="events.html">Events</a>
-                <a href="audition.html">Audition</a>
-                <a href="contact.html">Contact</a>
-                <a href="javascript:void(0);" class="icon">
-                    <div id="hamburger" onclick="change(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </a>
-            </div>
+    <div class="topnav" id="myTopnav">
+      <div id="homeLogo">
+        <a id="myHome" href="index.php" title="Return to home page">
+          <div class="block">
+            Princeton&nbsp;
+            <div class="orange">Chamber&nbsp;</div>
+          </div>
+          <div class="block">
+            <div class="orange">Music&nbsp;</div>
+            Society
+          </div>
+        </a>
+      </div>
+
+      <div id="tabs">
+        <a href="about.php" class="active">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Media</button>
+          <div class="dropdown-content">
+            <a href="photos.php">Photos</a>
+            <a href="videos.php">Videos & Recordings</a>
+          </div>
         </div>
-    </header>
+        <a href="events.php">Events</a>
+        <a href="audition.php">Audition</a>
+        <a href="contact.php">Contact</a>
+        <a href="javascript:void(0);" class="icon">
+          <div id="hamburger" onclick="change(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <header id="mobile-menu">
-        <div id="hamburger-menu">
-                <a href="about.html" class="active">About</a>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction()">Media</button>
-                </div>
-                <div id="myDropdown" class="dropdown-content">
-                        <a href="photos.html">Photos</a>
-                        <a href="videos.html">Videos & Recordings</a>
-                </div>
-                <a href="events.html">Events</a>
-                <a href="audition.html">Audition</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </header>
+  <header id="mobile-menu">
+    <div id="hamburger-menu">
+      <a href="about.php" class="active">About</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Media</button>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="photos.php">Photos</a>
+        <a href="videos.php">Videos & Recordings</a>
+      </div>
+      <a href="events.php">Events</a>
+      <a href="audition.php">Audition</a>
+      <a href="contact.php">Contact</a>
+    </div>
+  </header>
 
-    <div id="content">
-        <main>
-            <div class="hero-image" id="about-image">
-            <section id="mission" class="myContent">
-                <header><h1>
-                    Our Mission
-                </h1></header>
+  <div id="content">
+    <main>
+      <div class="hero-image" id="about-image">
+        <section id="mission" class="myContent">
+          <header>
+            <h1>
+              Our Mission
+            </h1>
+          </header>
 
-                <p>
-                    The Princeton Chamber Music Society was founded with the aim of offering chamber music performance, education, and outreach opportunities to all members of Princeton’s music community. We operate under the belief that every musician should get the chance to play chamber music, regardless of instrument, age, level of experience, or time commitment. 
-                </p>
-                <p>
-                    Hence, we have a total-acceptance policy: If you want to play chamber music, we’ll match you with groups and opportunities based on interests, time-commitment, and a placement audition. In the spirit of inclusivity and collaboration, we also work with numerous other departments and programs on campus to present mutually enriching interdisciplinary events, bringing together diverse parts of Princeton’s community through a shared love of music. 
-                </p>
-            </section>
-        </div>
-        <div class="overlay1">
-        <section id="opportunities" class="myContent">
-            <header><h1>
-                Opportunities
-            </h1></header>
-            <p>
-                    After being placed into a group at the beginning of the semester, or joining PCMS as a pre-formed group, you’ll be informed of concert and outreach opportunities that might be of interest to your group. In addition to more traditional performances, we collaborate each semester with a variety of programs on campus, presenting concerts ranging in theme from German Lieder and French Modernism to English music of the late eighteenth century. Through partnership with Rocky’s Classical Music Hour and “pop-up” concerts, musicians also have the chance to participate in more informal concert events throughout the semester. PCMS works with musicians in the Trenton Youth Orchestra through our outreach initiative, and our relationship with the Intercollegiate Chamber Music Festival allows PCMS groups to perform in NYC and participate in masterclasses with musicians from the Chamber Music Society of Lincoln Center.
-                </p>
+          <p>
+            The Princeton Chamber Music Society was founded with the aim of offering chamber music performance, education, and outreach opportunities to all members of Princeton’s music community. We operate under the belief that every musician
+            should get the chance to play chamber music, regardless of instrument, age, level of experience, or time commitment.
+          </p>
+          <p>
+            Hence, we have a total-acceptance policy: If you want to play chamber music, we’ll match you with groups and opportunities based on interests, time-commitment, and a placement audition. In the spirit of inclusivity and collaboration, we
+            also work with numerous other departments and programs on campus to present mutually enriching interdisciplinary events, bringing together diverse parts of Princeton’s community through a shared love of music.
+          </p>
         </section>
-    </div>
-       <!-- <hr>-->
-       <div class="overlay2">
-            <section id="board" class="myContent">
-                <header><h1>
-                    Board Members
-                </h1></header>
+      </div>
+      <div class="overlay1">
+        <section id="opportunities" class="myContent">
+          <header>
+            <h1>
+              Opportunities
+            </h1>
+          </header>
+          <p>
+            After being placed into a group at the beginning of the semester, or joining PCMS as a pre-formed group, you’ll be informed of concert and outreach opportunities that might be of interest to your group. In addition to more traditional
+            performances, we collaborate each semester with a variety of programs on campus, presenting concerts ranging in theme from German Lieder and French Modernism to English music of the late eighteenth century. Through partnership with
+            Rocky’s Classical Music Hour and “pop-up” concerts, musicians also have the chance to participate in more informal concert events throughout the semester. PCMS works with musicians in the Trenton Youth Orchestra through our outreach
+            initiative, and our relationship with the Intercollegiate Chamber Music Festival allows PCMS groups to perform in NYC and participate in masterclasses with musicians from the Chamber Music Society of Lincoln Center.
+          </p>
+        </section>
+      </div>
+      <!-- <hr>-->
+      <div class="overlay2">
+        <section id="board" class="myContent">
+          <header>
+            <h1>
+              Board Members
+            </h1>
+          </header>
 
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <img src="john.jpg" alt="John" style="width:100%">
-                            <div class="container">
-                                <h2>John Hoffmeyer</h2>
-                                <h3 class="title">President</h3>
-                                <h3>jg32@princeton.edu</h3>
-                                <p>John Hoffmeyer '19 is a pianist from Florence, SC. He majors in Comparative Literature with certificates in Musical Performance and Chinese Language and Culture. Outside of his musical commitments on campus, he works as a fellow at the Princeton Writing Center and remains dedicated to distance running and Dunkin Donuts iced coffee.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <img src="janice.jpg" alt="Janice" style="width:100%">
-                            <div class="container">
-                                <h2>Janice Cheon</h2>
-                                <h3 class="title">Vice President</h3>
-                                <h3>jcheon@princeton.edu</h3>
-                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <img src="nick.jpg" alt="Nick" style="width:100%">
-                            <div class="container">
-                                <h2>Nicholas Ioffreda</h2>
-                                <h3 class="title">Artistic Director</h3>
-                                <h3>ioffreda@princeton.edu</h3>
-                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <img src="henry.jpg" alt="Henry" style="width:100%">
-                            <div class="container">
-                                <h2>Henry Ando</h2>
-                                <h3 class="title">Treasurer</h3>
-                                <h3>hando@princeton.edu</h3>
-                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <img src="annie.jpg" alt="Annie" style="width:100%">
-                            <div class="container">
-                                <h2>Annie Zhou</h2>
-                                <h3 class="title">Publicity Chair & Webmaster</h3>
-                                <h3>anniez@princeton.edu</h3>
-                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <img src="jacob.jpg" alt="Jacob" style="width:100%">
-                            <div class="container">
-                                <h2>Jacob Williams</h2>
-                                <h3 class="title">Social Chair</h3>
-                                <h3>jacobaw@princeton.edu</h3>
-                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <img src="lou1.jpg" alt="Lou" style="width:100%">
-                            <div class="container">
-                                <h2>Lou Chen</h2>
-                                <h3 class="title">Community Liason & Outreach Director</h3>
-                                <h3>lychen@princeton.edu</h3>
-                                <p>Originally from San Bernardino, CA, Lou is a senior in the Music Department with certificates in American Studies and Conducting Performance. In addition to being Outreach Director for PCMS, he serves as Director of the Trenton Youth Orchestra and Assistant Conductor of the Princeton University Sinfonia. Although his passion lies in music education, he has also established an accomplished performance career as one of the most sought-after page-turners on campus.</p>
-                            </div>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="john.jpg" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>John Hoffmeyer</h2>
+                  <h3 class="title">President</h3>
+                  <h3>jg32@princeton.edu</h3>
+                  <p>John Hoffmeyer '19 is a pianist from Florence, SC. He majors in Comparative Literature with certificates in Musical Performance and Chinese Language and Culture. Outside of his musical commitments on campus, he works as a fellow
+                    at the Princeton Writing Center and remains dedicated to distance running and Dunkin Donuts iced coffee.</p>
                 </div>
-            </section>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="janice.jpg" alt="Janice" style="width:100%">
+                <div class="container">
+                  <h2>Janice Cheon</h2>
+                  <h3 class="title">Vice President</h3>
+                  <h3>jcheon@princeton.edu</h3>
+                  <p>Janice Cheon is a junior in the Department of German with certificates in Modern and Baroque Violin Performance, Humanistic Studies, and Medieval Studies. An active member of the Princeton music community, she is one of the
+                    Social Chairs for the Princeton University Orchestra and plays with Early Music Princeton. Outside of a full performance schedule, she also gives tours at the Princeton University Art Museum and serves as a research assistant for
+                    Prof. Wendy Heller and the German Department.</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="nick.jpg" alt="Nick" style="width:100%">
+                <div class="container">
+                  <h2>Nicholas Ioffreda</h2>
+                  <h3 class="title">Artistic Director</h3>
+                  <h3>ioffreda@princeton.edu</h3>
+                  <p>Nicholas Ioffreda is a junior in the Computer Science Department with a certificate in Musical Performance. His passion for music began with the fife and naturally processed to the flute and piccolo. He was a student at the
+                    Juilliard Pre-College division and has spent his summers at Tanglewood, Eastern Music Festival, and Interlochen. Additionally, he was a finalist for the Nation Flute Association High School Soloist Competition and a first place
+                    winner at the international MPrize competition with the Nonamé Quintet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="henry.jpg" alt="Henry" style="width:100%">
+                <div class="container">
+                  <h2>Henry Ando</h2>
+                  <h3 class="title">Treasurer</h3>
+                  <h3>hando@princeton.edu</h3>
+                  <p>Henry Ando is a junior in the Physics Department, originally from Urbana, Illinois. He’s played clarinet since age nine, and piano since six, although from his profile you can probably guess which he took more seriously. On
+                    campus, he’s played a concerto with Sinfonia, been a member of PUO and Sinfonia, and played a lot of chamber music. Outside of music, he spends a lot of time in lab and was a tutor for ISC and MAT 215-217.</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="annie.jpg" alt="Annie" style="width:100%">
+                <div class="container">
+                  <h2>Annie Zhou</h2>
+                  <h3 class="title">Publicity Chair & Webmaster</h3>
+                  <h3>anniez@princeton.edu</h3>
+                  <p>Annie Zhou is a sophomore in the Computer Science Department with certificates in Piano Performance and Japanese Language and Culture. From Toronto, Canada, she began playing the piano as a hobby at four and continued on to
+                    pursue a serious career in music, giving recitals in concert venues across Canada, China, France, Germany, Italy, Liechtenstein, Switzerland, and the US, including Carnegie Hall in New York and the Auditorium du Louvre in Paris.
+                    Before coming to Princeton, she was a freshman in the Piano Performance department at The Juilliard School.</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="jacob.jpg" alt="Jacob" style="width:100%">
+                <div class="container">
+                  <h2>Jacob Williams</h2>
+                  <h3 class="title">Social Chair</h3>
+                  <h3>jacobaw@princeton.edu</h3>
+                  <p>Jacob Williams is currently a junior in the Comparative Literature department. He has played the French horn since the 9th grade and is pursuing certificates in Musical Performance and East Asian Studies. In his free time he
+                    enjoys doing research, going to the gym, and spending time outdoors.</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="lou1.jpg" alt="Lou" style="width:100%">
+                <div class="container">
+                  <h2>Lou Chen</h2>
+                  <h3 class="title">Community Liason & Outreach Director</h3>
+                  <h3>lychen@princeton.edu</h3>
+                  <p>Originally from San Bernardino, CA, Lou is a senior in the Music Department with certificates in American Studies and Conducting Performance. In addition to being Outreach Director for PCMS, he serves as Director of the Trenton
+                    Youth Orchestra and Assistant Conductor of the Princeton University Sinfonia. While studying abroad at Oxford, he played piano and wrote songs in a homeless band. Although his passion lies in music education, he has also
+                    established an accomplished performance career as one of the most sought-after page-turners on campus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer id="site-footer">
+    <div id="myFooter1">
+      <form method="post" action="about.php">
+        <div>
+          <h3>Join our mailing list</h3>
         </div>
-        </main>
-    </div>
-    <footer id="site-footer">
-        <div id="myFooter1">
-        <form action="/action_page.php">
-            <div>
-                <h3>Join our mailing list</h3>
-            </div>
-            <div id="sign-up">            
-                <div class="form">
-                <input type="email" placeholder="Email Address" name="mail" required>
-            </div>
-            <div class="button">
-                <input type="submit" value="Sign Up">
-            </div>
+        <div id="sign-up">
+          <div class="form">
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <div class="button">
+            <input type="submit" value="Sign Up" name="submit">
+          </div>
         </div>
-        </form>
+      </form>
     </div>
-        <div id="myFooter2">
-            <div id="social">
-            <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
-                <img src="fb.png">
-            </a>
-            <!--<a href id="instagram">
+    <div id="myFooter2">
+      <div id="social">
+        <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
+          <img src="fb.png">
+        </a>
+        <!--<a href id="instagram">
                 <img src="ig.png">
             </a>-->
-        </div>
-            <div class="creds">
-                Copyright (c) 2018 Princeton Chamber Music Society
-            </div>
-            <div class="creds">
-                Website Design by The Zhous
-        </div>
-    </footer>
+      </div>
+      <div class="creds">
+        Copyright (c) 2018 Princeton Chamber Music Society
+      </div>
+      <div class="creds">
+        Website Design by The Zhous
+      </div>
+  </footer>
 </body>
 
 </html>
-
-
-
-
-
-
-

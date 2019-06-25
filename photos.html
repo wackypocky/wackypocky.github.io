@@ -2,307 +2,323 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="fontevents.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
-    <script type="text/javascript" src="jvs.scripts.js"></script>
-    <script type="text/javascript" src="myjs.scripts.js"></script>
-    <link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
-    <title>Princeton Chamber Music Ensemble</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126022641-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126022641-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="fontevents.css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
+  <script type="text/javascript" src="jvs.scripts.js"></script>
+  <script type="text/javascript" src="myjs.scripts.js"></script>
+  <link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
+  <title>Princeton Chamber Music Society</title>
 </head>
 
 <body id="photos">
-    <header id="site-header">
-        <div class="topnav" id="myTopnav">
-            <div id="homeLogo"> 
-                <a id="myHome" href="index.html" title="Return to home page">
-                    <div class="block">
-                        Princeton&nbsp;
-                        <div class="orange">Chamber&nbsp;</div> 
-                    </div>
-                    <div class="block">
-                        <div class="orange">Music&nbsp;</div> 
-                        Society
-                    </div>
-                </a>
-            </div>
+  <header id="site-header">
 
-            <div id="tabs">
-                <a href="about.html">About</a>
-                <div class="dropdown">
-                    <button class="dropbtn" id="active">Media</button>
-                    <div class="dropdown-content">
-                        <a href="photos.html" class="dropdown-active">Photos</a>
-                        <a href="videos.html">Videos & Recordings</a>
-                    </div>
-                </div>
-                <a href="events.html">Events</a>
-                <a href="audition.html">Audition</a>
-                <a href="contact.html">Contact</a>
-                <a href="javascript:void(0);" class="icon">
-                    <div id="hamburger" onclick="change(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </a>
-            </div>
+    <div class="topnav" id="myTopnav">
+      <div id="homeLogo">
+        <a id="myHome" href="index.php" title="Return to home page">
+          <div class="block">
+            Princeton&nbsp;
+            <div class="orange">Chamber&nbsp;</div>
+          </div>
+          <div class="block">
+            <div class="orange">Music&nbsp;</div>
+            Society
+          </div>
+        </a>
+      </div>
+
+      <div id="tabs">
+        <a href="about.php">About</a>
+        <div class="dropdown">
+          <button class="dropbtn" id="active">Media</button>
+          <div class="dropdown-content">
+            <a href="photos.php" class="dropdown-active">Photos</a>
+            <a href="videos.php">Videos & Recordings</a>
+          </div>
         </div>
-    </header>
+        <a href="events.php">Events</a>
+        <a href="audition.php">Audition</a>
+        <a href="contact.php">Contact</a>
+        <a href="javascript:void(0);" class="icon">
+          <div id="hamburger" onclick="change(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <header id="mobile-menu">
-        <div id="hamburger-menu">
-            <a href="about.html">About</a>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()" id="active">Media</button>
-            </div>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="photos.html" class="dropdown-active">Photos</a>
-                <a href="videos.html">Videos & Recordings</a>
-            </div>
-            <a href="events.html">Events</a>
-            <a href="audition.html">Audition</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </header>
+  <header id="mobile-menu">
+    <div id="hamburger-menu">
+      <a href="about.php">About</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()" id="active">Media</button>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="photos.php" class="dropdown-active">Photos</a>
+        <a href="videos.php">Videos & Recordings</a>
+      </div>
+      <a href="events.php">Events</a>
+      <a href="audition.php">Audition</a>
+      <a href="contact.php">Contact</a>
+    </div>
+  </header>
 
-    <div id="content">
-        <main>
-            <div class="w3-content w3-display-container" id="img-container">
-                <img class="mySlides" src="Kammermusik18_0086cutscale.jpg">
-                <img class="mySlides" src="audience.png">
-                <img class="mySlides" src="2pianolarge.jpg">
-                <img class="mySlides" src="lelandseho.png">
-                <img class="mySlides" src="stringpiano.png">
-                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-<!--<div class="w3-left" onclick="plusSlides(-1)">&#10216;</div>
+  <div id="content">
+    <main>
+      <div class="w3-content w3-display-container" id="img-container">
+        <img class="mySlides" src="Kammermusik18_0086cutscale.jpg">
+        <img class="mySlides" src="audience.png">
+        <img class="mySlides" src="2pianolarge.jpg">
+        <img class="mySlides" src="lelandseho.png">
+        <img class="mySlides" src="stringpiano.png">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <!--<div class="w3-left" onclick="plusSlides(-1)">&#10216;</div>
     <div class="w3-right" onclick="plusSlides(1)">&#10217;</div>-->
-    <span class="w3-badge" onclick="currentMySlide(1)"></span>
-    <span class="w3-badge" onclick="currentMySlide(2)"></span>
-    <span class="w3-badge" onclick="currentMySlide(3)"></span>
-    <span class="w3-badge" onclick="currentMySlide(4)"></span>
-    <span class="w3-badge" onclick="currentMySlide(5)"></span>
-</div>
-</div>
+          <span class="w3-badge" onclick="currentMySlide(1)"></span>
+          <span class="w3-badge" onclick="currentMySlide(2)"></span>
+          <span class="w3-badge" onclick="currentMySlide(3)"></span>
+          <span class="w3-badge" onclick="currentMySlide(4)"></span>
+          <span class="w3-badge" onclick="currentMySlide(5)"></span>
+        </div>
+      </div>
 
-<div class="overlay2" >
-    <section id="event-photos" class="myContent">
-        <header><h1>
-            Event Photos
-        </h1></header>
-        <div id="box">
+      <div class="overlay2">
+        <section id="event-photos" class="myContent">
+          <header>
+            <h1>
+              Event Photos
+            </h1>
+          </header>
+          <div id="box">
             <button class="photo-drop" onclick="showPhotos(this)">
-                <div class="plus">
-                    <div class="plus1"></div>
-                    <div class="plus2"></div>
-                </div>
-            &nbsp;&nbsp;&nbsp;Kammermusikabend - Spring 2018</button>
+              <div class="plus">
+                <div class="plus1"></div>
+                <div class="plus2"></div>
+              </div>
+              &nbsp;&nbsp;&nbsp;Kammermusikabend - Spring 2018
+            </button>
             <div id="drop-row" style="display:none">
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km1.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km1.jpg" alt="km1" style="width:100%"/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km2.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km2.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km3.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km3.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km4.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km4.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km5.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km5.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km6.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km6.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km7.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km7.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km8.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km8.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km9.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km9.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km10.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km10.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km11.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km11.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km12.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km12.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km13.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km13.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km14.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km14.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km15.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km15.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km16.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km16.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km17.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km17.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km18.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km18.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km19.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km19.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km20.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km20.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km21.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km21.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km22.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km22.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km23.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km23.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km24.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km24.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km25.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km25.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km26.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km26.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km27.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km27.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <a class="example-image-link" href="km28.jpg" data-lightbox="example-set">
-                                <img class="example-image" src="km28.jpg" alt="km2" style="width:100%" />
-                            </a>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km1.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km1.jpg" alt="km1" style="width:100%" />
+                    </a>
+                  </div>
                 </div>
+
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km2.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km2.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km3.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km3.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km4.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km4.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km5.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km5.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km6.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km6.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km7.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km7.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km8.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km8.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km9.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km9.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km10.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km10.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km11.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km11.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km12.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km12.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km13.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km13.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km14.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km14.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km15.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km15.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km16.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km16.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km17.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km17.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km18.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km18.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km19.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km19.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km20.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km20.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km21.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km21.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km22.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km22.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km23.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km23.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km24.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km24.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km25.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km25.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km26.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km26.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km27.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km27.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <a class="example-image-link" href="km28.jpg" data-lightbox="example-set">
+                      <img class="example-image" src="km28.jpg" alt="km2" style="width:100%" />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-<!--<button class="photo-drop" onclick="showPhotos(this)">
+            <!--<button class="photo-drop" onclick="showPhotos(this)">
 <div class="plus">
 <div class="plus1"></div>
 <div class="plus2"></div>
@@ -321,98 +337,101 @@
 </div>
 &nbsp;&nbsp;&nbsp;Nightfall - Spring 2016</button>
 -->
-</div>
-</section>
-</div>
-</main>
-</div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 
-<footer id="site-footer">
+  <footer id="site-footer">
     <div id="myFooter1">
-        <form action="/action_page.php">
-            <div>
-                <h3>Join our mailing list</h3>
-            </div>
-            <div id="sign-up">            
-                <div class="form">
-                    <input type="email" placeholder="Email Address" name="mail" required>
-                </div>
-                <div class="button">
-                    <input type="submit" value="Sign Up">
-                </div>
-            </div>
-        </form>
+      <form method="post" action="photos.php">
+        <div>
+          <h3>Join our mailing list</h3>
+        </div>
+        <div id="sign-up">
+          <div class="form">
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <div class="button">
+            <input type="submit" value="Sign Up" name="submit">
+          </div>
+        </div>
+      </form>
     </div>
     <div id="myFooter2">
-        <div id="social">
-            <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
-                <img src="fb.png">
-            </a>
-<!--<a href id="instagram">
-<img src="ig.png">
-</a>-->
-</div>
-<div class="creds">
-    Copyright (c) 2018 Princeton Chamber Music Society
-</div>
-<div class="creds">
-    Website Design by The Zhous
-</div>
-</footer>
-<script src="lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
-<script>
+      <div id="social">
+        <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
+          <img src="fb.png">
+        </a>
+        <!--<a href id="instagram">
+                <img src="ig.png">
+            </a>-->
+      </div>
+      <div class="creds">
+        Copyright (c) 2018 Princeton Chamber Music Society
+      </div>
+      <div class="creds">
+        Website Design by The Zhous
+      </div>
+  </footer>
+  <script src="lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script>
     lightbox.option({
       'fadeDuration': 300,
       'alwaysShowNavOnTouchDevices': true,
       'showImageNumberLabel': false,
     })
-</script>
-<script>
+  </script>
+  <script>
     var slideIndex = 0;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("w3-badge");
 
     showMySlides();
 
-    function showMySlides() {    
-        var i;    
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; 
-        }
-        slideIndex++;
-        if (slideIndex> slides.length) {slideIndex = 1}
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            slides[slideIndex-1].style.display = "block"; 
-            dots[slideIndex-1].className += " active";
-setTimeout(showMySlides, 3500); // Change image every 2 seconds
-}
-
-function currentMySlide(no) {
-    var i;    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+    function showMySlides() {
+      var i;
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slideIndex = no;
-    slides[no-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}
+      }
 
-function plusMySlides(n) {
-    var newslideIndex = slideIndex + n;
-    if(newslideIndex < 6 && newslideIndex > 0){
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showMySlides, 3500); // Change image every 2 seconds
+    }
+
+    function currentMySlide(no) {
+      var i;
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slideIndex = no;
+      slides[no - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    function plusMySlides(n) {
+      var newslideIndex = slideIndex + n;
+      if (newslideIndex < 6 && newslideIndex > 0) {
         currentMySlide(newslideIndex);
-    }
-    if(newslideIndex == 6) {
+      }
+      if (newslideIndex == 6) {
         currentMySlide(1);
-    }
-    if(newslideIndex == 0) {
+      }
+      if (newslideIndex == 0) {
         currentMySlide(5);
+      }
     }
-}
-</script>
+  </script>
 </body>
-</html> 
+
+</html>

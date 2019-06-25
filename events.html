@@ -2,190 +2,223 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="fontevents.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jvs.scripts.js"></script>
-    <script type="text/javascript" src="myjs.scripts.js"></script>
-    <title>Princeton Chamber Music Ensemble</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126022641-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126022641-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="fontevents.css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jvs.scripts.js"></script>
+  <script type="text/javascript" src="myjs.scripts.js"></script>
+  <title>Princeton Chamber Music Society</title>
 </head>
 
 <body id="events">
-    <header id="site-header">
-        <div class="topnav" id="myTopnav">
-            <div id="homeLogo"> 
-                <a id="myHome" href="index.html" title="Return to home page">
-                    <div class="block">
-                        Princeton&nbsp;
-                        <div class="orange">Chamber&nbsp;</div> 
-                    </div>
-                    <div class="block">
-                        <div class="orange">Music&nbsp;</div> 
-                        Society
-                    </div>
-                </a>
-            </div>
+  <header id="site-header">
 
-            <div id="tabs">
-                <a href="about.html">About</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Media</button>
-                    <div class="dropdown-content">
-                        <a href="photos.html">Photos</a>
-                        <a href="#">Videos & Recordings</a>
-                    </div>
-                </div>
-                <a href="events.html" class="active">Events</a>
-                <a href="audition.html">Audition</a>
-                <a href="contact.html">Contact</a>
-                <a href="javascript:void(0);" class="icon">
-                    <div id="hamburger" onclick="change(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </a>
-            </div>
+    <div class="topnav" id="myTopnav">
+      <div id="homeLogo">
+        <a id="myHome" href="index.php" title="Return to home page">
+          <div class="block">
+            Princeton&nbsp;
+            <div class="orange">Chamber&nbsp;</div>
+          </div>
+          <div class="block">
+            <div class="orange">Music&nbsp;</div>
+            Society
+          </div>
+        </a>
+      </div>
+
+      <div id="tabs">
+        <a href="about.php">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Media</button>
+          <div class="dropdown-content">
+            <a href="photos.php">Photos</a>
+            <a href="videos.php">Videos & Recordings</a>
+          </div>
         </div>
-    </header>
-
-    <header id="mobile-menu">
-        <div id="hamburger-menu">
-                <a href="about.html">About</a>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction()">Media</button>
-                </div>
-                <div id="myDropdown" class="dropdown-content">
-                        <a href="photos.html">Photos</a>
-                        <a href="#">Videos & Recordings</a>
-                </div>
-                <a href="events.html" class="active">Events</a>
-                <a href="audition.html">Audition</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </header>
-
-    <div id="content">
-        <main>
-            <div class="overlay1" id="ccp">
-            <section id="upcoming-ccp" class="myContent">
-                <h3 id="datelocation">
-                    <time datetime="2018-08-17">17 nov 2018</time>
-                    -- Alfred Lerner Hall, Columbia University
-                </h3>
-                <header><h1 id="name">
-                    Collaboration with Columbia Classical Performers
-                </h1></header>
-
-                <p>
-                    Musicians from PCMS and from Columbia’s own chamber music organization will collaborate on a concert event in NYC, deepening ties between the two universities and opening up chances for mutually enriching chamber music experiences.
-                </p>
-            </section>
-        </div>
-
-        <div class="overlay2" id="tigers">
-            <section id="upcoming-tigers" class="myContent">
-                <h3 id="datelocation">
-                    <time datetime="2018-08-17">30 nov 2018</time>
-                    -- Visual & Performing Arts, Trenton Central High School
-                </h3>
-                <header><h1 id="name">
-                    Tigers-in-Trenton
-                </h1></header>
-
-                <p>
-                    PCMS hosts the first ever "Tigers-in-Trenton" concert, bringing a diverse array of student music groups from Princeton to Trenton to perform for and speak with members of the Trenton Youth Orchestra.
-                </p>
-            </section>
-        </div>
-
-        <div class="overlay1" id="england">
-            <section id="upcoming-england" class="myContent">
-                <h3 id="datelocation">
-                    <time datetime="2018-08-17">28 mar 2019</time>
-                    -- Princeton University Art Museum
-                </h3>
-                <header><h1 id="name">
-                    Gainsborough’s England
-                </h1></header>
-
-                <p>
-                    In collaboration with the Princeton University Art Museum’s spring exhibit on the English artist Thomas Gainsborough (1746-1788), PCMS will present a program of English music from Gainsborough’s time to the 19th Century for an exciting interdisciplinary concert event.
-                </p>
-            </section>
-        </div>
-
-        <div class="overlay3" id="past">
-            <section id="past-events" class="myContent">
-                <header><h1>
-                    Past events
-                </h1></header>
-
-                <table class="past-events">
-                    <thead>
-                        <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr class="row">
-                            <td class="dates"><time>2018 may 4</time></td><td>Le Modernisme Français: An Evening of Chamber Music by French Composers & Guest Lecture by Professor Christy Wampole</td>
-                        </tr>
-                       <tr class="row">
-                            <td class="dates"><time>2018 mar 2</time></td>
-                            <td>Kammermusikabend: Chamber Music and Poetry by German Composers and Authors</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </div>
-        </main>
+        <a href="events.php" class="active">Events</a>
+        <a href="audition.php">Audition</a>
+        <a href="contact.php">Contact</a>
+        <a href="javascript:void(0);" class="icon">
+          <div id="hamburger" onclick="change(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
     </div>
+  </header>
 
-    <footer id="site-footer">
-        <div id="myFooter1">
-        <form action="/action_page.php">
-            <div>
-                <h3>Join our mailing list</h3>
-            </div>
-            <div id="sign-up">            
-                <div class="form">
-                <input type="email" placeholder="Email Address" name="mail" required>
-            </div>
-            <div class="button">
-                <input type="submit" value="Sign Up">
-            </div>
-        </div>
-        </form>
+  <header id="mobile-menu">
+    <div id="hamburger-menu">
+      <a href="about.php">About</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Media</button>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="photos.php">Photos</a>
+        <a href="videos.php">Videos & Recordings</a>
+      </div>
+      <a href="events.php" class="active">Events</a>
+      <a href="audition.php">Audition</a>
+      <a href="contact.php">Contact</a>
     </div>
-        <div id="myFooter2">
-            <div id="social">
-            <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
-                <img src="fb.png">
-            </a>
-            <!--<a href id="instagram">
+  </header>
+
+  <div id="content">
+    <main>
+
+      <div class="overlay1" id="nacht">
+        <a href="https://www.facebook.com/princetonchambermusic/" class="eventlink">
+          <section id="upcoming-nacht" class="myContent">
+            <h3 id="datelocation">
+              <time datetime="2019-11-09">9 nov 2019</time>
+              -- Chancellor Green Rotunda, Princeton University
+            </h3>
+            <header>
+              <h1 id="name">
+                Verklärte Nacht
+              </h1>
+            </header>
+
+            <p>
+              In our fourth collaboration with the German Department, PCMS will explore the intensely emotional world of spiritual metamorphosis inside Arnold Schönberg’s Verklärte Nacht, featuring a reading of Richard Dehmel’s eponymous poem that
+              provided the inspiration for this transformative string sextet.
+            </p>
+          </section>
+        </a>
+      </div>
+
+      <div class="overlay2" id="medicine">
+        <a href="https://www.facebook.com/princetonchambermusic/" class="eventlink">
+          <section id="upcoming-medicine" class="myContent">
+            <h3 id="datelocation">
+              <time datetime="2018-12-01">21 nov 2019</time>
+              -- Princeton University Art Museum
+            </h3>
+            <header>
+              <h1 id="name">
+                Being Sound: Music, Madness, and Medicine
+              </h1>
+            </header>
+
+            <p>
+              In collaboration with the Princeton University Art Museum’s exhibition, Worlds of Care: Visualizing Illness and Healing, PCMS will journey into the multifaceted intersection of music and medicine. The program, which spans six centuries,
+              ranges from a musical parody of a surgery to works that have been integrated into clinical music therapy.
+            </p>
+          </section>
+        </a>
+      </div>
+
+      <div class="overlay3" id="past">
+        <section id="past-events" class="myContent">
+          <header>
+            <h1>
+              Past events
+            </h1>
+          </header>
+
+          <table class="past-events">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="row">
+                <td class="dates">
+                  <time>2019 mar 28</time>
+                </td>
+                <td>Gainsborough’s England (in Collaboration with the Princeton University Art Museum): English music from Gainsborough’s time to the 19th Century</td>
+              </tr>
+              <tr class="row">
+                <td class="dates">
+                  <time>2018 dec 1</time>
+                </td>
+                <td>Schubertiade (in Collaboration with the Comparative Literature Department): Music and Text in Schubert's Reinvention of Song</td>
+              </tr>
+              <tr class="row">
+                <td class="dates">
+                  <time>2018 nov 30</time>
+                </td>
+                <td>Tigers-in-Trenton: Collaboration with the Trenton Youth Orchestra</td>
+              </tr>
+              <tr class="row">
+                <td class="dates">
+                  <time>2018 nov 17</time>
+                </td>
+                <td>Collaboration with Columbia Classical Performers</td>
+              </tr>
+              <tr class="row">
+                <td class="dates">
+                  <time>2018 may 4</time>
+                </td>
+                <td>Le Modernisme Français: An Evening of Chamber Music by French Composers & Guest Lecture by Professor Christy Wampole</td>
+              </tr>
+              <tr class="row">
+                <td class="dates">
+                  <time>2018 mar 2</time>
+                </td>
+                <td>Kammermusikabend: Chamber Music and Poetry by German Composers and Authors</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <div id="myFooter1">
+      <form method="post" action="events.php">
+        <div>
+          <h3>Join our mailing list</h3>
+        </div>
+        <div id="sign-up">
+          <div class="form">
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <div class="button">
+            <input type="submit" value="Sign Up" name="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="myFooter2">
+      <div id="social">
+        <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
+          <img src="fb.png">
+        </a>
+        <!--<a href id="instagram">
                 <img src="ig.png">
             </a>-->
-        </div>
-            <div class="creds">
-                Copyright (c) 2018 Princeton Chamber Music Society
-            </div>
-            <div class="creds">
-                Website Design by The Zhous
-        </div>
-    </footer>
+      </div>
+      <div class="creds">
+        Copyright (c) 2018 Princeton Chamber Music Society
+      </div>
+      <div class="creds">
+        Website Design by The Zhous
+      </div>
+  </footer>
 </body>
+
 </html>
-
-
-
-
-
-
-

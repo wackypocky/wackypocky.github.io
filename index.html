@@ -2,185 +2,219 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="fontevents.css" media="all">
-    <link rel="stylesheet" href="home1.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jvs.scripts.js"></script>
-    <script type="text/javascript" src="myjs.scripts.js"></script>
-    <title>Princeton Chamber Music Ensemble</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126022641-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126022641-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Princeton Chamber Music Society">
+  <meta property="og:image" content="http://princetonchambermusicsociety.com/logo4.jpg">
+  <meta property="og:description" content="Homepage of the Princeton Chamber Music Society. Welcome to our site!">
+  <meta property="og:url" content="https://princetonchambermusicsociety.com/">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="fontevents.css" media="all">
+  <link rel="stylesheet" href="home1.css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,300i,400,500|Nanum+Myeongjo:400,700|Open+Sans:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jvs.scripts.js"></script>
+  <script type="text/javascript" src="myjs.scripts.js"></script>
+  <title>Princeton Chamber Music Society</title>
 </head>
 
 <body id="home-index">
-    <header id="site-header">
+  <header id="site-header">
 
     <div class="topnav" id="myTopnav">
-            <div id="homeLogo"> 
-                <a id="myHome" href="index.html" title="Return to home page">
-                    <div class="block">
-                        Princeton&nbsp;
-                        <div class="orange">Chamber&nbsp;</div> 
-                    </div>
-                    <div class="block">
-                        <div class="orange">Music&nbsp;</div> 
-                        Society
-                    </div>
-                </a>
-            </div>
-
-            <div id="tabs">
-                <a href="about.html">About</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Media</button>
-                    <div class="dropdown-content">
-                        <a href="photos.html">Photos</a>
-                        <a href="videos.html">Videos & Recordings</a>
-                    </div>
-                </div>
-                <a href="events.html">Events</a>
-                <a href="audition.html" class="active">Audition</a>
-                <a href="contact.html">Contact</a>
-                <a href="javascript:void(0);" class="icon">
-                    <div id="hamburger" onclick="change(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-</header>
-
-<header id="mobile-menu">
-        <div id="hamburger-menu">
-            <a href="about.html">About</a>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Media</button>
-            </div>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="photos.html">Photos</a>
-                <a href="videos.html">Videos & Recordings</a>
-            </div>
-            <a href="events.html">Events</a>
-            <a href="audition.html" class="active">Audition</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </header>
-
-    <div id="intro">
-        <a href="#container" id="slide-down-to-content" class="arrow" title ="Continue to Upcoming Events">
-            <img src="noun_Arrow.png" alt="Continue to Upcoming Events">
+      <div id="homeLogo">
+        <a id="myHome" href="index.php" title="Return to home page">
+          <!--<div id="logo">
+                    <img src=logo4.jpg alt=PCMS id="imglogo">
+                </div>-->
+          <div class="block">
+            Princeton&nbsp;
+            <div class="orange">Chamber&nbsp;</div>
+          </div>
+          <div class="block">
+            <div class="orange">Music&nbsp;</div>
+            Society
+          </div>
         </a>
-    </div>
+      </div>
 
-    <div id="container">
-        <main>
-            <section id="upcoming-events">
-                <header>
-                    <h1><a href="events.html">Upcoming Events</a></h1>
-                </header>
-
-                <table class="upcoming-events">
-                    <thead>
-                        <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr class="clickable-row" data-href="events.html">
-                            <td class="dates"><time datetime="2018-11-17">2018 nov 17</time></td><td class="caption">Collaboration with Columbia Classical Performers</td>
-                        </tr>
-                        <tr class="clickable-row" data-href="events.html">
-                            <td class="dates"><time datetime="2018-11-30">2018 nov 30</time></td>
-                            <td class="caption">Tigers-in-Trenton</td>
-                        </tr>
-                        <tr class="clickable-row" data-href="events.html">
-                            <td class="dates"><time datetime="2019-03-28">2019 MAR 28</time></td>
-                            <td class="caption">Gainsborough’s England</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-    </div>
-    <div id="alternative-background"></div>
-
-    <div id="content">
-        <main>
-            <div class="overlay1" >
-            <section id="upcoming-events" class="myContent">
-                <header><h1><a href="events.html">
-                    Upcoming Events
-                </a></h1></header>
-
-                <table class="upcoming-events">
-                    <thead>
-                        <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr class="row">
-                            <td class="dates"><time>2018 nov 17</time></td><td>Collaboration with Columbia Classical Performers</td>
-                        </tr>
-                       <tr class="row">
-                            <td class="dates"><time>2018 nov 30</time></td>
-                            <td>Tigers-in-Trenton</td>
-                        </tr>
-                        <tr class="row">
-                            <td class="dates"><time>2019 mar 28</time></td>
-                            <td>Gainsborough’s England</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+      <div id="tabs">
+        <a href="about.php">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Media</button>
+          <div class="dropdown-content">
+            <a href="photos.php">Photos</a>
+            <a href="videos.php">Videos & Recordings</a>
+          </div>
         </div>
-        </main>
+        <a href="events.php">Events</a>
+        <a href="audition.php">Audition</a>
+        <a href="contact.php">Contact</a>
+        <a href="javascript:void(0);" class="icon">
+          <div id="hamburger" onclick="change(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
     </div>
+  </header>
 
-    <footer id="site-footer">
-        <div id="myFooter1">
-        <form action="/action_page.php">
-            <div>
-                <h3>Join our mailing list</h3>
-            </div>
-            <div id="sign-up">            
-                <div class="form">
-                <input type="email" placeholder="Email Address" name="mail" required>
-            </div>
-            <div class="button">
-                <input type="submit" value="Sign Up">
-            </div>
-        </div>
-        </form>
+  <header id="mobile-menu">
+    <div id="hamburger-menu">
+      <a href="about.php">About</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Media</button>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="photos.php">Photos</a>
+        <a href="videos.php">Videos & Recordings</a>
+      </div>
+      <a href="events.php">Events</a>
+      <a href="audition.php">Audition</a>
+      <a href="contact.php">Contact</a>
     </div>
-        <div id="myFooter2">
-            <div id="social">
-            <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
-                <img src="fb.png">
-            </a>
-            <!--<a href id="instagram">
+  </header>
+
+  <div id="intro">
+    <a href="#container" id="slide-down-to-content" class="arrow" title="Continue to Upcoming Events">
+      <img src="img/noun_Arrow.png" alt="Continue to Upcoming Events">
+    </a>
+  </div>
+
+  <div id="container">
+    <main>
+      <section id="upcoming-events">
+        <header>
+          <h1><a href="events.php">Upcoming Events</a></h1>
+        </header>
+
+        <table class="upcoming-events">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Name</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="clickable-row" data-href="events.php">
+              <td class="dates">
+                <time datetime="2018-11-30">2018 nov 30</time>
+              </td>
+              <td class="caption">Tigers-in-Trenton</td>
+            </tr>
+            <tr class="clickable-row" data-href="events.php">
+              <td class="dates">
+                <time datetime="2018-12-01">2018 dec 1</time>
+              </td>
+              <td class="caption">Schubertiade</td>
+            </tr>
+            <tr class="clickable-row" data-href="events.php">
+              <td class="dates">
+                <time datetime="2019-03-28">2019 MAR 28</time>
+              </td>
+              <td class="caption">Gainsborough’s England</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <div id="alternative-background"></div>
+
+  <div id="content">
+    <main>
+      <div class="overlay1">
+        <section id="upcoming-events" class="myContent">
+          <header>
+            <h1><a href="events.php">
+                Upcoming Events
+              </a></h1>
+          </header>
+
+          <table class="upcoming-events">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="row">
+                <td class="dates">
+                  <time>2018 nov 30</time>
+                </td>
+                <td>Tigers-in-Trenton</td>
+              </tr>
+              <tr class="row">
+                <td class="dates">
+                  <time>2018 dec 1</time>
+                </td>
+                < <td>Schubertiade</td>
+              </tr>
+              <tr class="row">
+                <td class="dates">
+                  <time>2019 mar 28</time>
+                </td>
+                <td>Gainsborough’s England</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <div id="myFooter1">
+      <form method="post" action="index.php">
+        <div>
+          <h3>Join our mailing list</h3>
+        </div>
+        <div id="sign-up">
+          <div class="form">
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <div class="button">
+            <input type="submit" value="Sign Up" name="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="myFooter2">
+      <div id="social">
+        <a href="https://www.facebook.com/princetonchambermusic/" id="facebook">
+          <img src="fb.png">
+        </a>
+        <!--<a href id="instagram">
                 <img src="ig.png">
             </a>-->
-        </div>
-            <div class="creds">
-                Copyright (c) 2018 Princeton Chamber Music Society
-            </div>
-            <div class="creds">
-                Website Design by The Zhous
-        </div>
-    </footer>
-    
+      </div>
+      <div class="creds">
+        Copyright (c) 2018 Princeton Chamber Music Society
+      </div>
+      <div class="creds">
+        Website Design by The Zhous
+      </div>
+  </footer>
+
 </body>
 
 </html>
-
-
